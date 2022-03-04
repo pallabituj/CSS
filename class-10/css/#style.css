@@ -1,0 +1,14 @@
+h1 {
+    background-color: brown;
+    display: inline;
+}
+div.01{
+    width: 700px;
+    margin ;
+    border:3px solid red;
+}
+div.02{
+    width: 700px;
+    margin ;
+    border: 3px green;
+}
