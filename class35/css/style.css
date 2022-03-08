@@ -34,6 +34,9 @@ h1{
     background-color: #1f2326;
     color: white;
 }
+.btn-style{
+    background-color: #5F4BB6;
+}
 .btn:hover{
     background-color: rosybrown;
 }
