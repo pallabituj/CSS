@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>card style</title>
+    <style>
+        .card-containers{
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 300px;
+            margin: 10px;
+            box-sizing: border-box;
+            box-shadow: 1px 2px 4px black;
+        }
+        .img-style{
+            width: 100%;
+        }
+        card-body{
+            padding: 5px;
+            background-color: blueviolet;
+        }
+        .color-body .card-title{
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+        }
+        .card-body .card-dese{
+            text-align: justify;
+            line-height: 1.5;
+            color: white;
+        }
+        .card:hover{
+            box-shadow: 6px 12px 10px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-containers">
+        <div class="card">
+            <img class="img-style" src="./image/pic.jpg">
+        </div>
+        <div class="card-body">
+            <div class="card-title">Programar</div>
+        </div>
+        <div class="card-dese">
+            <p>This is me,this is my first card.</p><br>
+            <p>The best selection of Royalty Free Business Card Vector Art, Graphics and Stock Illustrations.</p>
+        </div>
+
+    </div>
+</body>
+</html>
