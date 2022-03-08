@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and tooltip</title>
+    <style>
+        div{
+            height: 200px;
+            width: 250px;
+            background-color: aquamarine;
+            border: 1px solid red;
+            overflow: auto;
+        }
+        .tooltip . .tooltip-text{
+            visibility: hidden;
+            width: 150px;
+            background-color: indigo;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="tooltip">
+        <b>Facebook</b>
+        <br><br>
+        <span class="tooltip-text">Facebook is a social media</span>
+    </a>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi enim veritatis at reprehenderit voluptates quod temporibus rem tempora aspernatur autem quam, velit ducimus, alias ipsum recusandae. Odit assumenda ducimus earum possimus quae ipsam nam veniam odio. Ipsa voluptatem suscipit repudiandae blanditiis nesciunt. Voluptate ex nam quas ad debitis sapiente qui voluptas dolores laborum sequi! Quidem corporis officia ipsa, beatae vero doloremque reiciendis laboriosam, voluptas neque, eaque quasi est ullam et exercitationem commodi aliquam expedita quae harum nostrum iusto possimus? Vero hic quia, culpa magni quae aspernatur libero esse iure? At quibusdam amet officia, sunt obcaecati est maiores voluptates error!
+    </div>
+</body>
+</html>
