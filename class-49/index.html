@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tranform</title>
+    <style>
+        .main{
+            background-color: brown;
+            width: 350px;
+            height: 350px;
+            margin: 0 auto;
+            text-align: center;
+            transition: width 2s, tranform 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        h1{
+            font-size: 2.5rem;
+            color: wheat;
+            transition: font-size  2s;
+        }
+        .main:hover{
+            width: 450px;
+            transform:  skew(-360deg);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <h1>Pollobi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorum voluptatum, doloremque consequatur et asperiores pariatur quas nobis minus ea, voluptatem magni recusandae sequi iure dicta libero! Placeat, ab impedit!</p>
+    </div>
+</body>
+</html>
