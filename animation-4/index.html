@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        img{
+            width: 150px;
+            height: 150px;
+            position: relative;
+            animation: myfirst 5s 2;
+            animation-duration: alternate;
+        }
+
+        @keyframes myfirst {
+            0% {
+              left: 0px;
+              top: 0px;  
+            }
+            25% {
+                left: 200px;
+                top: 0px;
+            }
+            50%{
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation-direction: Alternate</h1>
+    <p>Play the animation forwards first, then backgrounds:</p><br>
+    <img src="./image/index.jpeg" alt=""/>
+</body>
+</html>
