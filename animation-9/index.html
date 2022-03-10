@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+           position: relative;
+           animation-name: flay-bird;
+           animation-duration: 4s;
+           animation-direction: reverse;
+        }
+
+        @keyframes flay-bird {
+            0% {left: 0px;
+            top: 0px;}
+        }
+        25% {
+            left: 200px;
+            top: 0px;
+        }
+        50% {
+            left: 100px;
+            top: 100px;
+        }
+        75% {
+            left: 0px;
+            top:200px;
+        }
+        100% {
+            left:0px;
+            top:0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+
+
+    <p>The animation-direction proparty specifies whether an animation should be player forwaed.</p>
+    <img src="./image/index.png" alt=""/>
+</body>
+</html>
