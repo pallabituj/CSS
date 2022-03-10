@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-1</title>
+    <style>
+        img{
+            max-width: 200px;
+            height: auto;
+            border: 2px solid black;
+
+            display: black;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 50%;
+            animation-name: img-anim;
+            animation-duration: 3s;
+            
+        }
+        img:hover{
+            animation-name: img-anim;
+            animation-duration: 3s;
+        }
+       
+
+        @-o-keyframes img-anim{
+            from{
+                max-width: 200px;
+            }
+            to{
+                max-width: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./image/pic.jpg" alt="">
+</body>
+</html>
