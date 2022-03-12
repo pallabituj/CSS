@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backface visibility</title>
+    <style>
+        .flip-container{
+            margin: 50px;
+            perspective: 1000px;
+            display: inline-block;
+        }
+
+        .flip-container:hover .card {
+                transform: rotateY(180deg);
+        }
+
+        .card, .front, .back {
+            width: 230px;
+            height: 295px;
+        }
+
+        .card {
+            position: relative;
+            transition: 0.5s all;
+            transform-style: preserve-3d;
+        }
+
+        .front {
+            z-index: 1;
+            transform: rotateY(280deg);
+        }
+        .back {
+            z-index: 2;
+            transform: rotateY(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="filp-container">
+        <div class="card">
+            <img src="./image/pic.jpg" class="back" clt="Card Back"/>
+            <img src="./image/pic.jpg" class="front" alt="card Front"/>
+        </div>
+    </div>
+    <p><strong>Note:</strong>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ullam.</p>
+</body>
+</html>
