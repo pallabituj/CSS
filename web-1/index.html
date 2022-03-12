@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quary</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .column{
+            float: 25%;
+            padding: 10px;
+        }
+             /*Medium devices (landscape tablets, 768px and up) */
+        @media only screen  and (max-width:768px) {
+            .column{
+                float: 50%;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quia.
+            </p>        </div>
+            <div class="column">
+                <h1>CSS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem dignissimos impedit maxime, eius esse!</p>
+            </div>
+            <div class="clumn">
+                <h1>JS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequuntur odit et iusto tenetur cum, perspiciatis nobis quia omnis eveniet?</p>
+            </div>
+            <div class="column">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem autem ea animi minus cupiditate asperiores provident quisquam exercitationem facilis?</p>
+            </div>
+    </div>
+</body>
+</html>
